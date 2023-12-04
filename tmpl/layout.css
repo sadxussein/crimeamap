@@ -1,0 +1,163 @@
+body{
+    background-color: white;
+}
+
+.mapdiv {
+	/* width: 50%; */
+	position: relative;
+	margin: auto;
+	text-align: center;
+}
+
+.crimea {
+	width: 615px;
+	height: 415px;
+}
+
+.crimea path {
+    fill: /*#3a3658*/#a8a1de;
+    stroke: #ffffff;	
+    stroke-width:0.5px;
+    transition: fill 0.3s;
+	cursor:pointer;
+}
+
+.crimea path:hover {
+    fill: /*#d4d0e8*/#3a3658;
+}
+
+.crimea > #sevastopol > path {
+	fill: gray;
+}
+
+.popupwindow {
+	padding: 10px;
+	z-index: 1999;
+	font-family: Arial, sans-serif;
+	font-size: 10pt;
+	background-color: #3a3658;
+	border-radius: 6px;
+	border-color: white; 
+	border-style: solid;
+	color: white;
+	position: absolute;
+}
+
+#infomiddlesupport {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#infomodal {
+	display: none;
+    position: fixed;
+    z-index: 5000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    /* overflow: auto;  */
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4);
+}
+
+#info {
+	/* min-width: 0px; */
+	max-width: 80%;
+	/* max-height: 80%; */
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px;
+	font-family: Arial, sans-serif;
+	font-size: 10pt;
+	background-color: #3a3658;
+	border-radius: 6px;
+	border-color: white; 
+	border-style: solid;
+	color: white;
+	overflow: auto;
+}
+
+#infoback {
+	background-color: rgba(0,0,0,0.8);
+	max-width: 40%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.functable > .bahchisarayskiy,.functable > .belogorskiy,
+.functable > .djankoyskiy,.functable > .kirovskiy,
+.functable > .krasnogvardeyskiy,.functable > .krasnoperekopskiy,
+.functable > .leninskiy,.functable > .nijnegorskiy,
+.functable > .pervomayskiy,.functable > .razdolnenskiy,
+.functable > .sakskiy,.functable > .simferopolskiy,
+.functable > .sovetskiy,.functable > .chernomorskiy,
+.functable > .alushta,.functable > .armyansk,
+.functable > .djankoy,.functable > .evpatoria,
+.functable > .kerch,.functable > .krasnoperekopsk,
+.functable > .saki,.functable > .simferopol,
+.functable > .sudak,.functable > .feodosiya,
+.functable > .yalta {
+	display: none;
+}
+
+#popup, #marks, #popupbody {
+	display: none;
+}
+
+#marksheader, #popupheader {	
+	font-size: 20px;
+}
+
+#popupclose, #infoclose, #marksclose {
+	cursor: pointer;
+}
+
+#infoclose {
+	color: white;
+	text-align: center;	
+}
+
+#recommend {
+	text-align: center;
+	display: none;
+}
+
+#recommend > a {
+	color: white !important;	
+}
+
+#recommend > a:hover {
+	color: blue !important;
+}
+
+#infoheader, #markheader {
+	font-size: 20px;
+	padding-bottom: 10px;
+	text-align: center;
+} 
+
+.subject, .mark, .mark_teacher {
+	cursor: pointer;
+}
+
+.subject::before, .mark::before, .mark_teacher::before {
+	content: " - ";
+}
+
+.subject:hover, #popupclose:hover,
+.mark:hover, .mark_teacher:hover, #marksclose:hover, 
+#infoclose:hover, #recommend:hover {
+	color: #ab6a85;
+} 
+
+.tableinfo {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.tableinfo td {	
+	display: none;
+	border: 1px solid black !important;
+	padding: 5px !important;
+}
