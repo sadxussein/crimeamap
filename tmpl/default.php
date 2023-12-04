@@ -2514,7 +2514,7 @@
 	<div class="popupwindow" id="marks">
 		<div id="marksheader"></div>
 		<div id="marksbody">			
-			<div>Оценка ГИА/ЕГЭ (2022 год):</div>
+			<div>Оценка ГИА/ЕГЭ (2023 год):</div>
 			<!-- <div class="mark" id="green" style="color:green;">выше 70%</div> -->
 			<!-- <div class="mark" id="yellow" style="color:yellow;">от 50% до 70%</div> -->
 			<!-- <div class="mark" id="red" style="color:red;">до 50%</div><br>	 -->
